@@ -3,8 +3,12 @@
 
 const Calendar = () => {
     return (
-        "<div> </div>"
-        )
+        <div> 
+            <h1> 
+                Calendar 
+            </h1> 
+        </div>
+    )
 };
 
 export default Calendar

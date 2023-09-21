@@ -1,0 +1,67 @@
+:root {
+    --primary: #226622;
+    --primaryLight: #448844;
+    --primaryLighter: #bbffbb;
+    --primaryDark: #115511;
+    --primaryDarker: #004400;
+    --secondary: #333333;
+    --secondaryLight: #444444;
+    --secondaryLighter: #555555;
+    --secondaryDarker: #222222;
+    --positive: #44cc44;
+    --negative: #cc4444;
+    --primaryBackgorund: #cccc22;
+    --secondaryBackground: #2222cc;
+    --primaryText: #050505;
+    --secondaryText: #202020;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    border: 0;
+    font-family: Thoma, Arial, sans-serif;
+    color: var(--primaryText);
+}
+
+header {
+    color: var(--negative);
+    text-decoration: none;
+    background-color: var(--primaryDarker);
+}
+/*
+header nav {
+  float: left;
+}
+*/
+ul {
+    padding: 0;
+    margin: 5rem auto;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    gap: 2rem;
+    color: var(--primaryLighter)
+}
+
+li {
+
+    font-size: 2rem;
+    gap: 5;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: var(--primaryLighter);
+    text-decoration: none;
+}
+
+.TopNavBar {
+
+}
