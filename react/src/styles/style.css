@@ -10,58 +10,176 @@
     --secondaryDarker: #222222;
     --positive: #44cc44;
     --negative: #cc4444;
-    --primaryBackgorund: #cccc22;
-    --secondaryBackground: #2222cc;
-    --primaryText: #050505;
+    --primaryBackgorund: rgba(05, 08, 05, 01);
+    --headerBackgorund: rgba(184, 238, 58, 0.8);
+    --secondaryBackground: rgba(05, 65, 18, 0.8);
+    --primaryText: #efefef;
     --secondaryText: #202020;
 
 }
 
-html {
+* {
     box-sizing: border-box;
+    padding: 8px;
+    border: 0;
+    margin: 0;
 }
 
 body {
-    padding: 0;
-    border: 0;
-    font-family: Thoma, Arial, sans-serif;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
     color: var(--primaryText);
+    background-color: var(--primaryBackgorund);
+    padding: 0;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+}
+
+.topNavBar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.topNavBar a {
+    
 }
 
 header {
+    height: 48vh;
+    margin: 0 auto;
+    background-image: linear-gradient(to right bottom, var(--headerBackgorund), var(--secondaryBackground));
+    
+    /* background-image:  url(../images/pexels-yadanar-kyaw-16153897_L.jpg);
+    */
+    background-size: cover;
+    background-repeat: none;
+    background-position: top;
     color: var(--negative);
     text-decoration: none;
-    background-color: var(--primaryDarker);
+    
+    font-weight: 400;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: top;
+
+    clip-path: polygon(0 0, 0 75%,10% 100%, 20% 84%, 46% 100%, 56% 72%, 82% 92%, 90% 82%, 100% 100%, 100% 0);
 }
-/*
-header nav {
-  float: left;
-}
-*/
+
 ul {
     padding: 0;
-    margin: 5rem auto;
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    align-content: space-evenly;
-    gap: 2rem;
-    color: var(--primaryLighter)
+    align-items: stretch;
+    align-content: space-between;
+    gap: 2%;
 }
 
 li {
-
-    font-size: 2rem;
-    gap: 5;
+    font-size: 1.6rem;
 }
 
-a:link, a:visited, a:hover, a:active {
-    color: var(--primaryLighter);
+a {
+    color: var(--primaryText);
     text-decoration: none;
 }
 
-.TopNavBar {
+.tittle {
+    font-size: 2rem;
+    align-self: center;
+    color: var(--primaryText);
+}
 
+.tittle h2 {
+    font-size: 0.9rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+    
+}
+
+.logo {
+    order: 2;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    order: 999;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.footer h4 b {
+    font-weight: 900;
+    color: var(--headerBackgorund);
+}
+
+@media (min-width: 320px) {
+
+}
+
+@media (min-width: 1024px) {
+    .tittle {
+        font-size: 4rem;
+    }
+    
+    .tittle h2 {
+        font-size: 1.4rem;
+        letter-spacing: 1rem;        
+    }
+
+    .logo {
+        font-size: 4rem;
+        order: 0;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    li {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .tittle {
+        font-size: 6rem;
+    }
+    
+    .tittle h2 {
+        font-size: 2rem;
+        letter-spacing: 2rem;        
+    }
+
+    .logo {
+        font-size: 6rem;
+        order: 2;
+        justify-self: center;
+        flex-basis: auto;
+    }
+
+    li {
+        font-size: 2.2rem;
+    }
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
 }

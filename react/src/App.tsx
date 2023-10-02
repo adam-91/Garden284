@@ -2,12 +2,15 @@ import { useState, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useTranslation} from 'react-i18next';
+import MainLayout from './layouts/MainLayout';
 import TopNavBar from './layouts/TopNavBar';
+import Foot from './layouts/Foot';
 import Calendar from "./features/Calendar";
 import Plants from "./pages/Plants";
 import Articles from "./pages/Articles";
 import Galery from "./pages/Galery";
 import About from "./pages/About";
+
 import './i18n';
 
 
@@ -21,28 +24,21 @@ const App = () => {
         <div>
            <Suspense fallback='...loading'> 
                 <BrowserRouter>
-                    <header>
-                        <TopNavBar/>
-                        
-                    </header>
-                    <h2> test </h2>
-                
-                    <h1> {t('Hello world')}</h1>
+                    <TopNavBar/>
+                    
 
                     <Routes>
-                        <Route path='/' element={'/'}> Garden 284 </Route>
-                        <Route path='/calendar' element={<Calendar />}> Calendar </Route>
-                        <Route path='/plants' element={<Plants />}> Plants </Route>
-                        <Route path='/articles' element={<Articles />}> Articles </Route>
-                        <Route path='/galery' element={<Galery />}> Galery </Route>
-                        <Route path='/about' element={<About />}> About </Route>
+                        <Route path='/' element={<MainLayout />}> {t('Garden 284')} </Route>
+                        <Route path='/calendar' element={<Calendar />}> {t('Calendar')} </Route>
+                        <Route path='/plants' element={<Plants />}> {t('Plants')} </Route>
+                        <Route path='/articles' element={<Articles />}> {t('Articles')} </Route>
+                        <Route path='/galery' element={<Galery />}> {t('Galery')} </Route>
+                        <Route path='/about' element={<About />}> {t('About')} </Route>
                     </Routes>
+
+                    <Foot />
                 </BrowserRouter>
             </Suspense>
-
-        <footer>
-            <h4> Page not use cookie yet </h4>
-        </footer>
 
         </div>
         
