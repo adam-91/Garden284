@@ -1,5 +1,4 @@
 import { useState, Suspense } from 'react';
-import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useTranslation} from 'react-i18next';
 import MainLayout from './layouts/MainLayout';
@@ -45,11 +44,5 @@ const App = () => {
     )
 }
 
-const container = document.getElementById("root");
 
-if (container) {
-    const root = createRoot(container);
-    root.render(<App />);
-} else {
-    console.log('test 1');
-}
+export default App

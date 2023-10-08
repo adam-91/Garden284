@@ -46,10 +46,6 @@ nav {
 
 }
 
-.topNavBar a {
-    
-}
-
 header {
     height: 48vh;
     margin: 0 auto;
@@ -115,7 +111,7 @@ a {
     flex-flow: row wrap;
     order: 999;
     letter-spacing: 0.2rem;
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
 }
@@ -182,4 +178,31 @@ a {
 
 .order3 {
     order: 3;
+}
+
+#mainArticle {
+    min-height: 80px;
+}
+
+#articleList {
+    min-height: 12px;
+    background-image: linear-gradient(to right bottom, var(--headerBackgorund), var(--secondaryBackground));
+    
+}
+
+#other {
+    min-height: 40px;
+}
+
+.fig-left {
+    width: 100%;
+    min-height: 40rem;
+    display:flex;
+    flex-flow: row wrap;
+    gap: 5%;
+}
+
+.fig-left img {
+    min-height: 50%;
+    order: 1;
 }
