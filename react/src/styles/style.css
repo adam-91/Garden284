@@ -20,7 +20,7 @@
 
 * {
     box-sizing: border-box;
-    padding: 8px;
+    padding: 0px;
     border: 0;
     margin: 0;
 }
@@ -31,7 +31,7 @@ body {
     line-height: 1.7;
     color: var(--primaryText);
     background-color: var(--primaryBackgorund);
-    padding: 0;
+    padding: 10px;
     margin: 0 auto;
 }
 
@@ -91,13 +91,14 @@ a {
     font-size: 2rem;
     align-self: center;
     color: var(--primaryText);
+    text-transform: capitalize;
 }
 
 .tittle h2 {
     font-size: 0.9rem;
     letter-spacing: 0.8rem;
     text-align: center;
-    
+    text-transform: capitalize;
 }
 
 .logo {
@@ -184,12 +185,6 @@ a {
     min-height: 80px;
 }
 
-#articleList {
-    min-height: 12px;
-    background-image: linear-gradient(to right bottom, var(--headerBackgorund), var(--secondaryBackground));
-    
-}
-
 #other {
     min-height: 40px;
 }
@@ -205,4 +200,44 @@ a {
 .fig-left img {
     min-height: 50%;
     order: 1;
+}
+
+.articles  {
+    background-image: linear-gradient(to right bottom, rgba(236, 240, 35, 0.8), var(--negative));
+}
+
+.articleList {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+    padding-block: 20px;
+    gap: 4%;
+    min-height: 500px;
+    width: auto;
+}
+
+.one {
+    background-image: linear-gradient(to right bottom, rgba(114, 35, 240, 0.8), blue);
+}
+
+.two {
+    background-image: linear-gradient(to right bottom, rgba(42, 126, 63, 0.8), lime);
+}
+
+.three {
+    background-image: linear-gradient(to right bottom, rgba(196, 25, 33, 0.8), orange);
+}
+
+.four {
+    background-image: linear-gradient(to right bottom, rgba(35, 148, 240, 0.8), yellow);
+}
+
+.five {
+    background-image: linear-gradient(to right bottom, rgba(240, 35, 223, 0.8), red );
+}
+
+.six {
+    background-image: linear-gradient(to right bottom, rgba(35, 148, 240, 0.8), black);
 }

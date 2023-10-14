@@ -21,9 +21,10 @@ const MainLayout = () => {
                             <figcaption>This webside is about plants.</figcaption>
                         </figure>
                         <h1> This wabside is create to learnig HTML5, CSS, TS and React.</h1>
+                        <h3> </h3>
                     </div>
                 </section>
-                <section id='articleList'>
+                <section>
                     <figure>
 
                     </figure>
