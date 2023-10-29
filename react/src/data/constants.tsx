@@ -1,0 +1,2 @@
+export const CAROUSEL_INTERVAL = 5000;
+export const CAROUSEL_ANIMATION_TIME = 1000;
