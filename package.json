@@ -8,7 +8,8 @@
       "build": "vite build",
       "preview": "vite preview",
       "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-      "lint": "eslint \"react/src/**/*.{js,jsx,ts,tsx}\" --quiet"
+      "lint": "eslint \"react/src/**/*.{js,jsx,ts,tsx}\" --quiet",
+      "compile:sass": "node-sass ./react/src/sass/main.scss ./react/src/styles/style.css"
    },
    "keywords": [],
    "author": "Adam Hadała",
@@ -37,6 +38,7 @@
       "eslint-plugin-react": "^7.33.2",
       "eslint-plugin-react-hooks": "^4.6.0",
       "i18next-parser": "^8.7.0",
+      "node-sass": "^9.0.0",
       "prettier": "^3.0.3",
       "typescript": "^5.2.2",
       "vite": "^4.4.9"

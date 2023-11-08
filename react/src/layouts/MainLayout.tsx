@@ -8,8 +8,10 @@ const MainLayout = () => {
       <div>
          <header>
             <div className="tittle">
-               <h1> {t("Garden 284")} </h1>
-               <h2> {t("Gardening motto")} </h2>
+               <h1>
+                  <span className="tittle-main"> {t("Garden 284")} </span>
+                  <span className="tittle-sub">{t("Gardening motto")} </span>
+               </h1>
             </div>
          </header>
 

@@ -9,6 +9,7 @@ import Plants from "./pages/Plants";
 import Articles from "./pages/Articles";
 import Galery from "./pages/Galery";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
 import "./i18n";
 
@@ -48,6 +49,10 @@ const App = () => {
                   <Route path="/about" element={<About />}>
                      {" "}
                      {t("About")}{" "}
+                  </Route>
+                  <Route path="/contact" element={<Contact />}>
+                     {" "}
+                     {t("Contact")}{" "}
                   </Route>
                   <Route path="*" element={<PageNotFound />}>
                      {" "}
