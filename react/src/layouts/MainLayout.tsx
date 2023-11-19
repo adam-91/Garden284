@@ -6,11 +6,16 @@ const MainLayout = () => {
    const { t, i18n } = useTranslation();
    return (
       <div>
-         <header>
-            <div className="tittle">
-               <h1>
-                  <span className="tittle-main"> {t("Garden 284")} </span>
-                  <span className="tittle-sub">{t("Gardening motto")} </span>
+         <header className="header">
+            <div className="centered">
+               <h1 className="tittle">
+                  <span className="tittle tittle--main">
+                     {" "}
+                     {t("Garden 284")}{" "}
+                  </span>
+                  <span className="tittle tittle--sub">
+                     {t("Gardening motto")}
+                  </span>
                </h1>
             </div>
          </header>

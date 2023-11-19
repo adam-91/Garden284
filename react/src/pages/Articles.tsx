@@ -17,7 +17,7 @@ const Articles = () => {
          <section className="articleList">
             <ArticleBox
                id={1}
-               class="one"
+               class="articleList one"
                tittle="Article 1"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -26,7 +26,7 @@ const Articles = () => {
 
             <ArticleBox
                id={2}
-               class="two"
+               class="articleList two"
                tittle="Article 2"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -34,7 +34,7 @@ const Articles = () => {
             />
             <ArticleBox
                id={3}
-               class="three"
+               class="articleList three"
                tittle="Article 3"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -42,7 +42,7 @@ const Articles = () => {
             />
             <ArticleBox
                id={4}
-               class="four"
+               class="articleList four"
                tittle="Article 4"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -50,7 +50,7 @@ const Articles = () => {
             />
             <ArticleBox
                id={5}
-               class="five"
+               class="articleList five"
                tittle="Article 5"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -58,7 +58,7 @@ const Articles = () => {
             />
             <ArticleBox
                id={6}
-               class="six"
+               class="articleList six"
                tittle="Article 6"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -66,7 +66,7 @@ const Articles = () => {
             />
             <ArticleBox
                id={1}
-               class="one"
+               class="articleList one"
                tittle="Article 7"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -75,7 +75,7 @@ const Articles = () => {
 
             <ArticleBox
                id={2}
-               class="two"
+               class="articleList two"
                tittle="Article 8"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -83,7 +83,7 @@ const Articles = () => {
             />
             <ArticleBox
                id={3}
-               class="three"
+               class="articleList three"
                tittle="Article 9"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -91,7 +91,7 @@ const Articles = () => {
             />
             <ArticleBox
                id={4}
-               class="four"
+               class="articleList four"
                tittle="Article 10"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -99,7 +99,7 @@ const Articles = () => {
             />
             <ArticleBox
                id={5}
-               class="five"
+               class="articleList five"
                tittle="Article 11"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"
@@ -107,7 +107,7 @@ const Articles = () => {
             />
             <ArticleBox
                id={6}
-               class="six"
+               class="articleList six"
                tittle="Article 12"
                subTittle="Lorem upsum dolor sit amet."
                image="../images/pexels-purple_flowers_S.jpg"

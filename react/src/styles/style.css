@@ -8,176 +8,25 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
-  font-family: Lato, sans-serif;
-  font-weight: 300;
-  line-height: 1.7;
-  color: #efefef;
   background-color: #050805;
   padding: 1rem;
   margin: 0 auto;
-  height: 100%;
-  font-size: 1.6rem; }
-
-nav {
-  width: 100%; }
-
-.topNavBar {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center; }
-
-header {
-  height: 48vh;
-  margin: 0 auto;
-  background-image: linear-gradient(to right bottom, rgba(184, 238, 58, 0.8), rgba(5, 65, 18, 0.8));
-  /* background-image:  url(../images/pexels-yadanar-kyaw-16153897_L.jpg);
-     */
-  background-size: cover;
-  background-repeat: none;
-  background-position: top;
-  color: #cc4444;
-  text-decoration: none;
-  font-weight: 400;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: top;
-  clip-path: polygon(0 0, 0 75%, 10% 100%, 20% 84%, 46% 100%, 56% 72%, 82% 92%, 90% 82%, 100% 100%, 100% 0); }
-
-ul {
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: stretch;
-  align-content: space-between;
-  gap: 2%; }
-
-li {
-  font-size: 2.5rem; }
-
-a {
-  color: #efefef;
-  text-decoration: none; }
-
-.tittle {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
-  color: #efefef;
-  text-transform: capitalize; }
-
-.tittle-main {
-  font-size: 10rem;
-  display: block;
-  animation-name: moveInLeft;
-  animation-duration: 3s;
-  animation-timing-function: ease-out; }
-
-.tittle-sub {
-  font-size: 4rem;
-  letter-spacing: 1.4rem;
-  text-align: center;
-  display: block;
-  animation-name: moveInRight;
-  animation-duration: 3s;
-  animation-timing-function: ease-out; }
-
-.logo {
-  order: 2;
-  font-size: 3rem;
-  font-weight: 900; }
-
-.footer {
-  /*display: flex;
-   
-    flex-flow: row wrap;*/
-  order: 999;
-  letter-spacing: 0.3rem;
-  position: fixed;
-  bottom: 0; }
-
-.footer h4 b {
-  font-weight: 900;
-  color: rgba(184, 238, 58, 0.8); }
-
-#mainArticle {
-  min-height: 8rem; }
-
-#other {
-  min-height: 4rem; }
-
-@media (min-width: 1024px) {
-  .tittle {
-    font-size: 4rem; }
-  .tittle h2 {
-    font-size: 7rem;
-    letter-spacing: 1.6rem; }
-  .logo {
-    font-size: 6.4rem;
-    order: 0;
-    flex-basis: 100%;
-    text-align: center; }
-  li {
-    font-size: 2.9rem; } }
-
-@media (min-width: 1440px) {
-  .tittle {
-    font-size: 10rem; }
-  .tittle h2 {
-    font-size: 3rem;
-    letter-spacing: 3rem; }
-  .logo {
-    font-size: 10rem;
-    order: 2;
-    justify-self: center;
-    flex-basis: auto; }
-  li {
-    font-size: 3.5rem; } }
-
-.order1 {
-  order: 1; }
-
-.order2 {
-  order: 2; }
-
-.order3 {
-  order: 3; }
-
-.order4 {
-  order: 4; }
-
-.padding {
-  height: 2rem;
-  width: 100%; }
-
-.pageNotFound {
-  background-image: url("../images/tree-3979965_640_reverse.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 64rem;
-  height: 58rem;
-  margin: 0 auto; }
-
-.pageNotFound h1 {
-  position: relative;
-  top: 8rem;
-  left: -32rem;
-  color: rgba(184, 238, 58, 0.8);
-  font-weight: 700;
-  text-align: center;
-  font-size: 8rem;
-  opacity: 1; }
-
-.pageNotFound h2 {
-  position: relative;
-  top: 46rem;
-  text-align: center; }
+  height: 100%; }
+  @media (max-width: 56.25em) {
+    body {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    body {
+      padding: 0; } }
 
 @keyframes moveInLeft {
   0% {
@@ -198,3 +47,201 @@ a {
   100% {
     opacity: 1;
     transform: translateX(0); } }
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #efefef;
+  font-size: 1.6rem; }
+
+.topNavBar {
+  font-size: 2.5rem;
+  font-weight: 700; }
+  .topNavBar__logo {
+    font-size: 3rem;
+    font-weight: 900; }
+
+.tittle {
+  text-transform: capitalize; }
+  .tittle .tittle--main {
+    font-size: 10rem; }
+  .tittle .tittle--sub {
+    font-size: 4rem;
+    letter-spacing: 1.4rem; }
+  @media (max-width: 75em) {
+    .tittle .tittle--sub {
+      letter-spacing: 1.2rem; } }
+  @media (max-width: 56.25em) {
+    .tittle {
+      letter-spacing: 1rem; }
+      .tittle .tittle--main {
+        font-size: 8rem; } }
+  @media (max-width: 37.5em) {
+    .tittle .tittle--main {
+      font-size: 7rem;
+      font-weight: 400;
+      letter-spacing: 0.5rem; }
+    .tittle .tittle--sub {
+      font-weight: 300;
+      letter-spacing: 0.5rem; } }
+
+.articles {
+  background-image: linear-gradient(to right bottom, rgba(236, 240, 35, 0.8), var(--negative)); }
+
+.articleList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between; }
+  .articleList img {
+    object-fit: cover; }
+  .articleList figure {
+    margin-bottom: 1.4rem;
+    flex-grow: 1; }
+  .articleList .one {
+    background-image: linear-gradient(to right bottom, rgba(114, 35, 240, 0.8), blue); }
+  .articleList .two {
+    background-image: linear-gradient(to right bottom, rgba(42, 126, 63, 0.8), lime); }
+  .articleList .three {
+    background-image: linear-gradient(to right bottom, rgba(196, 25, 33, 0.8), orange); }
+  .articleList .four {
+    background-image: linear-gradient(to right bottom, rgba(35, 148, 240, 0.8), yellow); }
+  .articleList .five {
+    background-image: linear-gradient(to right bottom, rgba(240, 35, 223, 0.8), red); }
+  .articleList .six {
+    background-image: linear-gradient(to right bottom, rgba(35, 148, 240, 0.8), black); }
+
+.fig-left {
+  width: 100%;
+  min-height: 64rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5%; }
+  .fig-left img {
+    min-height: 50%;
+    order: 1; }
+
+.header {
+  height: 48vh;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(184, 238, 58, 0.8), rgba(5, 65, 18, 0.8));
+  /* background-image:  url(../images/pexels-yadanar-kyaw-16153897_L.jpg);
+       */
+  background-size: cover;
+  background-repeat: none;
+  background-position: top;
+  clip-path: polygon(0 0, 0 75%, 10% 100%, 20% 84%, 46% 100%, 56% 72%, 82% 92%, 90% 82%, 100% 100%, 100% 0); }
+
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.tittle {
+  width: 150%;
+  color: #efefef; }
+  .tittle .tittle--main {
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    order: 1;
+    display: block; }
+  .tittle .tittle--sub {
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    order: 2;
+    display: block; }
+
+.footer {
+  /*display: flex;
+     flex-flow: row wrap;*/
+  order: 999;
+  letter-spacing: 0.3rem;
+  position: fixed;
+  bottom: 0; }
+  .footer h4 b {
+    font-weight: 900;
+    color: rgba(184, 238, 58, 0.8); }
+
+nav {
+  width: 100%; }
+
+.topNavBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .topNavBar ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-between;
+    gap: 2%; }
+  .topNavBar__logo {
+    order: 2; }
+    @media (max-width: 37.5em) {
+      .topNavBar__logo {
+        order: 0;
+        text-align: center; } }
+    .topNavBar__logo a,
+    .topNavBar__logo a:link,
+    .topNavBar__logo a:visited {
+      color: rgba(184, 238, 58, 0.8);
+      text-decoration: none;
+      font-weight: 700; }
+  .topNavBar__li a,
+  .topNavBar__li a:link,
+  .topNavBar__li a:visited {
+    color: #efefef;
+    text-decoration: none; }
+
+.pageNotFound {
+  background-image: url("../images/tree-3979965_640_reverse.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 64rem;
+  height: 58rem;
+  margin: 0 auto; }
+  .pageNotFound h1 {
+    position: relative;
+    top: 8rem;
+    left: -32rem;
+    color: rgba(184, 238, 58, 0.8);
+    font-weight: 700;
+    text-align: center;
+    font-size: 8rem;
+    opacity: 1; }
+  .pageNotFound h2 {
+    position: relative;
+    top: 46rem;
+    text-align: center; }
+
+#mainArticle {
+  min-height: 8rem; }
+
+#other {
+  min-height: 4rem; }
+
+.order1 {
+  order: 1; }
+
+.order2 {
+  order: 2; }
+
+.order3 {
+  order: 3; }
+
+.order4 {
+  order: 4; }
+
+.padding {
+  height: 2rem;
+  width: 100%; }

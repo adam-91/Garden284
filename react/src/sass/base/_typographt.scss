@@ -1,0 +1,102 @@
+body {
+   font-family: Lato, sans-serif;
+   font-weight: 300; //100,300,400,700,900
+   line-height: 1.7;
+   color: $primaryText;
+   font-size: 1.6rem;
+}
+
+.topNavBar {
+   font-size: 2.5rem;
+   font-weight: 700;
+
+   &__logo {
+      font-size: 3rem;
+      font-weight: 900;
+   }
+   // @include respond(tab-h) {
+
+   // }
+   // @include respond(tab-v) {
+
+   // }
+}
+
+.tittle {
+   text-transform: capitalize;
+
+   .tittle--main {
+      font-size: 10rem;
+   }
+
+   .tittle--sub {
+      font-size: 4rem;
+      letter-spacing: 1.4rem;
+   }
+
+   @include respond(tab-h) {
+      .tittle--sub {
+         letter-spacing: 1.2rem;
+      }
+   }
+   @include respond(tab-v) {
+      .tittle--main {
+         font-size: 8rem;
+      }
+      letter-spacing: 1rem;
+   }
+   @include respond(phone) {
+      .tittle--main {
+         font-size: 7rem;
+         font-weight: 400;
+         letter-spacing: 0.5rem;
+      }
+      .tittle--sub {
+         font-weight: 300;
+         letter-spacing: 0.5rem;
+      }
+   }
+}
+
+// @media (min-width: 1024px) {
+//    html {
+//       font-size: 62.5%;
+//    }
+//    .tittle {
+//       font-size: 4rem;
+//    }
+
+//    .tittle h2 {
+//       font-size: 7rem;
+//       letter-spacing: 1.6rem;
+//    }
+
+//    li {
+//       font-size: 2.9rem;
+//    }
+// }
+
+// @media (min-width: 1440px) {
+//    html {
+//       font-size: 75%;
+//    }
+//    .tittle {
+//       font-size: 10rem;
+//    }
+
+//    .tittle h2 {
+//       font-size: 3rem;
+//       letter-spacing: 3rem;
+//    }
+
+//    .logo {
+//       font-size: 10rem;
+//       order: 2;
+//       justify-self: center;
+//       flex-basis: auto;
+//    }
+
+//    li {
+//       font-size: 3.5rem;
+//    }
+// }

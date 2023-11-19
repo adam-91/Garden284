@@ -1,0 +1,13 @@
+.footer {
+   /*display: flex;
+     flex-flow: row wrap;*/
+   order: 999;
+   letter-spacing: 0.3rem;
+   position: fixed;
+   bottom: 0;
+
+   h4 b {
+      font-weight: 900;
+      color: $headerBackgorund;
+   }
+}

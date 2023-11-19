@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+   padding: 0px;
+   border: 0;
+   margin: 0;
+}
+
+html {
+   font-size: 62.5%; //1rem: 10px;
+
+   @include respond(tab-h) {
+      font-size: 56.25%; //1rem: 9px
+   }
+
+   @include respond(tab-v) {
+      font-size: 50%; //1rem: 8px
+   }
+}
+
+body {
+   box-sizing: border-box;
+   background-color: $primaryBackgorund;
+   padding: 1rem;
+   margin: 0 auto;
+   height: 100%;
+
+   @include respond(tab-v) {
+      font-size: 50%;
+   }
+
+   @include respond(phone) {
+      padding: 0;
+   }
+}

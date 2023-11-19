@@ -1,0 +1,55 @@
+.header {
+   height: 48vh;
+   margin: 0 auto;
+   width: 100%;
+   position: relative;
+   background-image: linear-gradient(
+      to right bottom,
+      $headerBackgorund,
+      $secondaryBackground
+   );
+
+   /* background-image:  url(../images/pexels-yadanar-kyaw-16153897_L.jpg);
+       */
+   background-size: cover;
+   background-repeat: none;
+   background-position: top;
+   // color: $negative;
+
+   clip-path: polygon(
+      0 0,
+      0 75%,
+      10% 100%,
+      20% 84%,
+      46% 100%,
+      56% 72%,
+      82% 92%,
+      90% 82%,
+      100% 100%,
+      100% 0
+   );
+}
+
+.centered {
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.tittle {
+   width: 150%;
+   color: $primaryText;
+
+   .tittle--main {
+      @include tittle-animation(moveInLeft);
+      order: 1;
+      display: block;
+   }
+
+   .tittle--sub {
+      @include tittle-animation(moveInRight);
+      order: 2;
+      display: block;
+   }
+}

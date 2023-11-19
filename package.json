@@ -9,7 +9,7 @@
       "preview": "vite preview",
       "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
       "lint": "eslint \"react/src/**/*.{js,jsx,ts,tsx}\" --quiet",
-      "compile:sass": "node-sass ./react/src/sass/main.scss ./react/src/styles/style.css"
+      "compile:sass": "node-sass ./react/src/sass/main.scss ./react/src/styles/style.css -w"
    },
    "keywords": [],
    "author": "Adam Hadała",

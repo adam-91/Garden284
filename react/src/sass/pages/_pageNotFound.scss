@@ -1,0 +1,26 @@
+.pageNotFound {
+   background-image: url("../images/tree-3979965_640_reverse.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 64rem;
+   height: 58rem;
+   margin: 0 auto;
+
+   h1 {
+      position: relative;
+      top: 8rem;
+      left: -32rem;
+      color: $headerBackgorund;
+      font-weight: 700;
+      text-align: center;
+      font-size: 8rem;
+      opacity: 1;
+   }
+
+   h2 {
+      position: relative;
+      top: 46rem;
+      text-align: center;
+   }
+}

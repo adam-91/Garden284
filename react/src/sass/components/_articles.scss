@@ -1,0 +1,84 @@
+.articles {
+   background-image: linear-gradient(
+      to right bottom,
+      rgba(236, 240, 35, 0.8),
+      var(--negative)
+   );
+}
+
+.articleList {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-content: space-between;
+
+   img {
+      object-fit: cover;
+   }
+
+   figure {
+      margin-bottom: 1.4rem;
+      flex-grow: 1;
+   }
+
+   .one {
+      background-image: linear-gradient(
+         to right bottom,
+         rgba(114, 35, 240, 0.8),
+         blue
+      );
+   }
+
+   .two {
+      background-image: linear-gradient(
+         to right bottom,
+         rgba(42, 126, 63, 0.8),
+         lime
+      );
+   }
+
+   .three {
+      background-image: linear-gradient(
+         to right bottom,
+         rgba(196, 25, 33, 0.8),
+         orange
+      );
+   }
+
+   .four {
+      background-image: linear-gradient(
+         to right bottom,
+         rgba(35, 148, 240, 0.8),
+         yellow
+      );
+   }
+
+   .five {
+      background-image: linear-gradient(
+         to right bottom,
+         rgba(240, 35, 223, 0.8),
+         red
+      );
+   }
+
+   .six {
+      background-image: linear-gradient(
+         to right bottom,
+         rgba(35, 148, 240, 0.8),
+         black
+      );
+   }
+}
+
+.fig-left {
+   width: 100%;
+   min-height: 64rem;
+   display: flex;
+   flex-flow: row wrap;
+   gap: 5%;
+
+   img {
+      min-height: 50%;
+      order: 1;
+   }
+}
